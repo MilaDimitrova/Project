@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+.btn {
+    background-color: #dad4cb ; 
+    border: none;
+    border-radius: 15px;
+    color: white; 
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+  
+
+  .btn:hover {
+    background-color: lightgrey;
+  }
+ 
+  .feature-btn .command{
+    background-color: #dad4cb ; 
+    border: none;
+    border-radius: 15px;
+    position:absolute;
+    z-index: 99;
+    align-items: flex-end;
+    top: 220%;
+    left: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+.feature-btn .command:hover{
+  background-color: lightgrey;
+  
+}
+
+.btn a{
+  border-radius: none;
+  text-decoration: none;
+  color: black;
+}
+
+.command a{
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.content a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.content a:hover{
+  color: #b9a584 ;
+}

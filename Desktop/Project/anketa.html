@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Опознавателна анкета</title>
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+     
+    
+    <div class="wrapper">
+      <div class="title">Опознавателна анкета</div>
+      <form class="form" action="https://formsubmit.co/htmlanketi@gmail.com" method="POST">
+        <div class="input_field" >
+          <label>Име:</label>
+          <input type="text" class="input" placeholder="Име" name="firstName" required>
+        </div>
+
+        <div class="input_field">
+          <label>Фамилия:</label>
+          <input type="text" class="input"  placeholder="Фамилия" name="lastName" required>
+        </div>
+
+        <div class="input_field">
+          <label>Еmail:</label>
+          <input type="email" class="input"  placeholder="Пример: htmlanketi@gmail.com" name="email" required />
+        </div>
+
+        <div class="input_field">
+          <label>Любимо хоби:</label>
+          <input type="text" class="input"  placeholder="Любимо хоби" name="hobby" required/>
+        </div>
+
+        <div class="input_field">
+          <label>Разкажи ни за себе си:</label>
+          <textarea class="textarea"  placeholder="Разкажи ни нещо!" required></textarea>
+        </div>
+
+        <div class="input_field">
+          <label for="birthday">Дата на раждане:</label>
+          <input type="date" id="birthday" name="birthday" name="birthday" max="" required/>
+        </div>
+
+        <div class="input_field">
+          <label>Gender</label>
+          <div class="custom_select"></div>
+          <select required name="gender">
+            <option value="nothing">Избери</option>
+            <option value="male">Мъж</option>
+            <option value="female">Жена</option>
+          </select>
+        </div>
+        <div class="input_field">
+          <label>Град</label>
+          <div class="custom_select"></div>
+          <select required name="city">
+            <option value="town">Избери</option>
+            <option value="town">Троян</option>
+            <option value="town">Хасково</option>
+            <option value="town">Пловдив</option>
+            <option value="town">Ловеч</option>
+            <option value="town">Варна</option>
+            <option value="town">Бургас</option>
+            <option value="town">Созопол</option>
+            <option value="town">Велико Търново</option>
+            <option value="town">Казанлък</option>
+            <option value="town">Плевен</option>
+            <option value="town">Русе</option>
+            <option value="town">Козлодуй</option>
+          </select>
+          
+          <div class="input_field terms">
+            <label class="check">
+              <input type="checkbox" name="checkbox" required/>
+              <span class="checkmark"></span>
+            </label>
+            <p>Съгласявам се с общите условия</p>
+          </div>
+          <div class="input_field">
+            <input type="submit" value="Изпрати" class="btn" id="inputBtn" required/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

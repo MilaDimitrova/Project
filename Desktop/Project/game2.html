@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Камък ножица хартия</title>
+    <link rel="stylesheet" href="game2.css">
+    
+    <button class="btn"><i class="fa fa-home"></i><a href="index.html">Начална страница</a></button>
+
+  </head>
+  <body>
+    <header>
+      <h1>Камък ножица хартия</h1>
+    </header>
+
+    <div class="score-board">
+      <div id="user-label" class="badge">АЗ</div>
+      <div id="computer-label" class="badge">КОМПЮТЪР</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+      <p>Хартията бие камъка.Ти печелиш!</p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="rock.png" alt="" width="100px"/>
+      </div>
+      <div class="choices">
+        <div class="choice" id="p">
+          <img src="paper.png" alt="" width="100px" />
+        </div>
+        <div class="choices">
+            <div class="choice" id="s">
+              <img src="scisors.png" alt="" width="100px"/>
+     </div>
+    </div>
+
+    <p id="action-message"> Направи ход!</p>
+    <script src="game2.js" charset="utf-8"></script>
+  </body>
+</html>

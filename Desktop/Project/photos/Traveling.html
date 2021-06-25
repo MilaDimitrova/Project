@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="bg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+     <title>Traveling</title>
+    
+
+<link rel="stylesheet" href="./Traveling_files/style.css"></head>
+
+<body>
+   <section id="header">
+       <div class="container">
+        <img src="http://127.0.0.1:5500/index.html" class="logo">
+        <div class="header-text"> 
+            <h1>Постави своята начална точка тук!</h1>
+            <p>Тук ще намерите повече информация за туризма в България и по конкретно най-удивителните места за посещение!</p>
+            <button class="command"> Прочети повече </button>
+            <div class="line"> 
+                <span class="line2"></span><br>
+                <span class="line3"></span><br>
+                <span class="line4"></span>
+            </div>
+         </div>
+       </div>
+   </section>
+
+   <nav id="sideNav" style="right: -250px;">
+       <ul>
+           <li><a href="http://127.0.0.1:5500/index.html#">Начална страница</a></li>
+           <li><a href="http://127.0.0.1:5500/index.html#">За нас</a></li>
+           <li><a href="http://127.0.0.1:5500/index.html#">Забележителности</a></li>
+           <li><a href="http://127.0.0.1:5500/index.html#">Пътувания</a></li>
+           <li><a href="http://127.0.0.1:5500/index.html#">Галерия</a></li>
+           <li><a href="http://127.0.0.1:5500/index.html#">Свържете се с нас</a></li>
+       </ul>
+   </nav>
+   
+   <img src="./Traveling_files/sideMenu.png" id="menu">
+
+   <!-- за нас -->
+
+   <section id="about">
+       <!-- <div class="aboutUsLeft">
+           <img src="photos/about3.jpeg">
+       </div> -->
+       <div class="aboutUsRight">
+          <div class="aboutText">
+              <h1>За нас</h1>
+              <p>Ние сме "ThisTravel" компания за туризъм.Каква е нашата цел? Целта ни е колкото се може
+                  повече хора да обиколят нашата родна страна,а именно България.Да опознаете и видите най-известните 
+                  и красиви забележителности на страната.</p>
+          </div>
+        </div>
+        <!-- особеност -->
+        <section id="features">
+          <div class="feature-row">
+              <div class="feature-col">
+                  <img src="./Traveling_files/first.png">
+                  <h4>Пътешествай</h4>
+                  <p>Тук ще те запознаем с много нови и почти неоткриваеми
+                      кътчета в България!
+                  </p>
+              </div>
+              <div class="feature-col">
+                 <img src="./Traveling_files/second.png">
+                 <h4>Откривай нови места</h4>
+                 <p>Предоставяме ти избор на много забележителности!</p>
+              </div>
+              <div class="feature-col">
+                 <img src="./Traveling_files/third.png">
+                 <h4>Сподели с нас</h4>
+                 <p>Имаш възможността да споделиш с нас по всяко едно време!</p>
+              </div>
+          </div>
+        </section>
+   </section>
+
+
+
+
+   <script>
+       var menu = document.getElementById("menu");
+       var sideNav = document.getElementById("sideNav");
+
+       sideNav.style.right = "-250px";
+       menu.onclick = function(){
+           if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+           }
+           else{
+            sideNav.style.right = "-250px"
+           }
+       }
+
+   </script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

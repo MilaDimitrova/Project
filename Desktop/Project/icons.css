@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.info {
+  width: 450px;
+  background: rgb(207, 202, 206);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: "Centry Gothic", sans-serif;
+}
+
+.info-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.info h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+.info h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.info li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.info li a {
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+
+.info li a:hover {
+  color: lightgrey;
+}
+
+
+.btn {
+  background-color: white ; 
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(207, 202, 206);
+}
+
+.btn a{
+  text-decoration: none;
+  color: black;
+} 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                         Въпрос
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Резултат
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+                <h1 id="question">Какъв е отговорът на този въпрос?</h1>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                     <p class="choice-text" data-number = "1">Избери</p>
+                </div>
+
+                <div class="choice-container">
+                    <p class="choice-prefix">Б</p>
+                     <p class="choice-text" data-number = "2">Избери 2</p>
+                </div>
+
+                <div class="choice-container">
+                    <p class="choice-prefix">В</p>
+                     <p class="choice-text" data-number = "3">Избери 3</p>
+                </div>
+
+                <div class="choice-container">
+                    <p class="choice-prefix">Г</p>
+                     <p class="choice-text" data-number = "4">Избери 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+#header {
+  height: 100vh;
+  background-image: url(photos/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.logo {
+  margin-top: 10px;
+  width: 125px;
+}
+
+.header-text {
+  max-width: 3000px;
+  margin-top: 340px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+  color: #d0cfd3;
+}
+
+.command {
+  padding: 15px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+p {
+  font-size: 20px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.header-text button {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2) !important;
+  z-index: 2;
+  transition: 0.7s;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 40px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#menu {
+  width: 50px;
+  position: fixed;
+  right: 25px;
+  top: 35px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*about*/
+
+#about {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(photos/a.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.aboutUsRight {
+  flex-basis: 100%;
+  margin-top: 20vh;
+  height: auto;
+  width: 100%;
+  text-align: right;
+}
+
+.aboutText {
+  max-width: 500px;
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.aboutText h1 {
+  color: #54524d;
+}
+
+.aboutText p {
+  color: #736b65;
+}
+
+/*features */
+
+#features {
+  position: absolute;
+  z-index: 99;
+  align-items: flex-end;
+  top: 55%;
+  left: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.feature-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-col {
+  width: auto;
+  max-height: 300px;
+  height: auto;
+  margin-right: 70px;
+  text-align: center;
+}
+
+.feature-col img {
+  width: 100px;
+}
+
+.feature-col h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.feature-col p {
+  color: #736b65;
+}
+
+.feature-btn {
+  border: none;
+  margin: 17px auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+#more {
+  display: none;
+}
+
+.feature-btn a{
+  text-decoration: none;
+  color: black;
+} 
+.feature-btn .command:hover{
+  background: white;
+}
+
+.command:hover{
+  background: white;
+  
+}

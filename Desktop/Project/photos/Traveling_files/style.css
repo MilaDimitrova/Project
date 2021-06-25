@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+#header{
+
+    height: 100vh;
+    background-image: url(photos/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+.logo{
+    margin-top: 30px;
+    width: 100px;
+}
+
+.header-text{
+    max-width: 5000px;
+    margin-top: 320px;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 34px;
+    color: #4B3D81;
+}
+
+.command{
+  padding: 15px 40px;
+  background:transparent;
+  outline: none;
+  border: 2px solid whitesmoke;
+
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+.line2{
+    width: 80px;
+    height: 1px;
+    background:lightgrey;
+    display: inline-block;
+
+}
+
+.line3 {
+    width: 60px;
+    height: 1px;
+    background:lightgrey;
+    display: inline-block;
+
+}
+
+.line4 {
+    width: 40px;
+    height: 1px;
+    background:lightgrey;
+    display: inline-block;
+
+}
+
+.line{
+    line-height: 8px;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #FDDED7;
+    z-index: 2;
+    transition: .7s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #00004d;
+}
+
+#menu{
+    width: 50px;
+    position: fixed;
+    right: 25px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*about*/
+
+#about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(photos/a.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.aboutUsRight{
+    flex-basis: 100%;
+    margin-top:20vh;
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+
+.aboutText{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+
+}
+
+.aboutText h1{
+    color: #3A683A;
+}
+
+.aboutText p{
+    color: #736B65;
+}
+
+
+/*features */
+
+#features{
+    position:absolute;
+    z-index: 99;
+    align-items: flex-end   ;
+    top: 65%;
+    left: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.feature-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-col{
+    width: auto;
+    max-height: 300px;
+    height: auto;
+    margin-right: 70px;
+    text-align: center;;
+}
+
+.feature-col img{
+    width: 100px;
+}
+
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-col p{
+    color: #736B65;
+}
+

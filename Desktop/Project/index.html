@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Traveling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <div class="container">
+        <img src="logo4.png" class="logo"  />
+        <div class="header-text">
+          <h1>Постави своята начална точка тук!</h1>
+          <p>
+            Тук ще намерите информация за туризма в България и по конкретно най-удивителните места за посещение!<span id="dots"
+              >....</span
+            ><span id="more">
+              Ще ви запознаем с повечето скрити и известни забележителности на
+              България.Ще откриете много интересни и забавни неща, с които може
+              да се забавлявате!Приключенствайте и не спирайте
+              да мечтаете!
+            </span>
+          </p>
+          <button class="command" onclick="myFunction()" id="myBtn">
+            Прочети повече
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="index.html">Начална страница</a></li>
+        <li><a href="gallery.html">Забележителности</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="game2.html">Камък,ножица,хартия</a></li>
+        <li><a href="contact.html">Свържете се с нас</a></li>
+        <li><a href="original.html">Aвтор на сайта</a></li>
+      </ul>
+    </nav>
+
+    <img src="photos/sideMenu.png" id="menu" />
+
+    <!-- за нас -->
+
+    <section id="about">
+      <!-- <div class="aboutUsLeft">
+           <img src="photos/about3.jpeg">
+       </div> -->
+      <div class="aboutUsRight">
+        <div class="aboutText">
+          <h1>За нас</h1>
+          <p>
+            Ние сме "ThisTravel" компания за туризъм.Каква е нашата цел? Целта
+            ни е колкото се може повече хора да обиколят нашата родна страна,а
+            именно България.Да опознаете и видите най-известните и красиви
+            забележителности на страната.Да се забавляваме с интересни и опознавателни игри!
+          </p>
+        </div>
+      </div>
+      <!-- особеност -->
+      <section id="features">
+        <div class="feature-row">
+          <div class="feature-col">
+            <img src="photos/first.png" />
+            <h4>Пътешествай</h4>
+            <p>
+              Тук ще те запознаем с много нови и почти неоткриваеми кътчета в
+              България!
+            </p>
+          </div>
+          <div class="feature-col">
+            <img src="photos/second.png" />
+            <h4>Откривай нови места</h4>
+            <p>Предоставяме ти избор на много забележителности!</p>
+          </div>
+          <div class="feature-col">
+            <img src="photos/third.png" />
+            <h4>Сподели с нас</h4>
+            <p>Имаш възможността да споделиш с нас по всяко едно време!</p>
+          </div>
+        </div>
+
+        <div class="feature-btn">
+          <button class="command"><a href="anketa.html"> Анкета </a></button>
+        </div>
+      </section>
+    </section>
+
+    <script>
+      var menu = document.getElementById("menu");
+      var sideNav = document.getElementById("sideNav");
+
+      sideNav.style.right = "-250px";
+      menu.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+        } else {
+          sideNav.style.right = "-250px";
+        }
+      };
+    </script>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Прочети повече";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Прочети по-малко";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
